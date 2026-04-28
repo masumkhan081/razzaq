@@ -33,11 +33,11 @@ $assets = get_stylesheet_directory_uri();
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown1">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#digitalFeatures1">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#digitalSectors">Sectors</a></li>
-            <li class="nav-item"><a class="nav-link" href="#digitalAbout">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="#digitalContact">Get in Touch</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/services/')); ?>">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/sectors/')); ?>">Sectors</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/insights/')); ?>">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/#digitalContact')); ?>">Get in Touch</a></li>
           </ul>
         </div>
       </div>

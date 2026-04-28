@@ -148,7 +148,7 @@ $assets = get_stylesheet_directory_uri();
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 px-lg-5 border-start-lg border-end-lg py-4 py-lg-0 mt-5 mt-lg-0">
+            <div class="col-lg-4 px-lg-5 border-start-lg border-end-lg mt-5 mt-lg-0">
               <div class="d-flex align-items-start font-secondary">
                 <div class="me-4 text-danger d-flex align-items-center justify-content-center flex-shrink-0" style="font-size:3.5rem; line-height:1; width:3.5rem; height:3.5rem;">&#8862;</div>
                 <div class="flex-1">
@@ -217,34 +217,37 @@ $assets = get_stylesheet_directory_uri();
 
           <div class="row">
             <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="h-100 border d-flex flex-column rounded overflow-hidden">
+              <a class="h-100 border d-flex flex-column rounded overflow-hidden text-decoration-none text-body" href="<?php echo esc_url(home_url('/sectors/healthcare/')); ?>">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&amp;q=80" alt="Healthcare" />
                 <div class="p-4 bg-light text-start flex-grow-1">
                   <div class="ls text-uppercase fs-10 fw-bold text-danger mb-2">Sector 01</div>
                   <h5 class="mb-2">Healthcare &amp; Medical</h5>
-                  <p class="mb-0 fs-9">NHS consultants, GPs, dentists, locums and medical partnerships. Specialist advice on pension tax charges, practice structures and HMRC compliance.</p>
+                  <p class="mb-3 fs-9">NHS consultants, GPs, dentists, locums and medical partnerships. Specialist advice on pension tax charges, practice structures and HMRC compliance.</p>
+                  <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="h-100 border d-flex flex-column rounded overflow-hidden">
+              <a class="h-100 border d-flex flex-column rounded overflow-hidden text-decoration-none text-body" href="<?php echo esc_url(home_url('/sectors/construction/')); ?>">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&amp;q=80" alt="Construction" />
                 <div class="p-4 bg-light text-start flex-grow-1">
                   <div class="ls text-uppercase fs-10 fw-bold text-danger mb-2">Sector 02</div>
                   <h5 class="mb-2">Construction &amp; Contractors</h5>
-                  <p class="mb-0 fs-9">Specialist knowledge of CIS, domestic reverse charge and contractor structures. We ensure compliance while maximising legitimate reliefs.</p>
+                  <p class="mb-3 fs-9">Specialist knowledge of CIS, domestic reverse charge and contractor structures. We ensure compliance while maximising legitimate reliefs.</p>
+                  <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="h-100 border d-flex flex-column rounded overflow-hidden">
+              <a class="h-100 border d-flex flex-column rounded overflow-hidden text-decoration-none text-body" href="<?php echo esc_url(home_url('/sectors/property/')); ?>">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&amp;q=80" alt="Property" />
                 <div class="p-4 bg-light text-start flex-grow-1">
                   <div class="ls text-uppercase fs-10 fw-bold text-danger mb-2">Sector 03</div>
                   <h5 class="mb-2">Property &amp; Investment</h5>
-                  <p class="mb-0 fs-9">Buy-to-let landlords, multi-property investors and developers. Advice on holding structures, SDLT, Section 24 and incorporation strategy.</p>
+                  <p class="mb-3 fs-9">Buy-to-let landlords, multi-property investors and developers. Advice on holding structures, SDLT, Section 24 and incorporation strategy.</p>
+                  <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -268,48 +271,54 @@ $assets = get_stylesheet_directory_uri();
 
           <div class="row text-start">
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="h-100 p-4 p-md-5 border rounded bg-white">
+              <a class="h-100 d-block p-4 p-md-5 border rounded bg-white text-decoration-none text-body" href="<?php echo esc_url(home_url('/services/self-assessment/')); ?>">
                 <div class="display-4 fw-bold text-danger lh-1 mb-3">01</div>
                 <h5 class="mb-3">Self Assessment</h5>
-                <p class="mb-0 fs-9 text-body">Personal tax returns for sole traders, locums, landlords, high earners and individuals with multiple income sources. Covers pension allowance, capital gains and trusts.</p>
-              </div>
+                <p class="mb-3 fs-9 text-body">Personal tax returns for sole traders, locums, landlords, high earners and individuals with multiple income sources. Covers pension allowance, capital gains and trusts.</p>
+                <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
+              </a>
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="h-100 p-4 p-md-5 border rounded bg-white">
+              <a class="h-100 d-block p-4 p-md-5 border rounded bg-white text-decoration-none text-body" href="<?php echo esc_url(home_url('/services/limited-companies/')); ?>">
                 <div class="display-4 fw-bold text-danger lh-1 mb-3">02</div>
                 <h5 class="mb-3">Limited Companies</h5>
-                <p class="mb-0 fs-9 text-body">Statutory accounts, corporation tax returns and Companies House compliance for UK limited companies across all sizes and industries.</p>
-              </div>
+                <p class="mb-3 fs-9 text-body">Statutory accounts, corporation tax returns and Companies House compliance for UK limited companies across all sizes and industries.</p>
+                <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
+              </a>
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="h-100 p-4 p-md-5 border rounded bg-white">
+              <a class="h-100 d-block p-4 p-md-5 border rounded bg-white text-decoration-none text-body" href="<?php echo esc_url(home_url('/services/paye-payroll/')); ?>">
                 <div class="display-4 fw-bold text-danger lh-1 mb-3">03</div>
                 <h5 class="mb-3">PAYE &amp; Payroll</h5>
-                <p class="mb-0 fs-9 text-body">End-to-end payroll processing and PAYE compliance &mdash; RTI submissions, P60s, P11Ds, auto-enrolment, statutory payments and director payroll.</p>
-              </div>
+                <p class="mb-3 fs-9 text-body">End-to-end payroll processing and PAYE compliance &mdash; RTI submissions, P60s, P11Ds, auto-enrolment, statutory payments and director payroll.</p>
+                <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
+              </a>
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="h-100 p-4 p-md-5 border rounded bg-white">
+              <a class="h-100 d-block p-4 p-md-5 border rounded bg-white text-decoration-none text-body" href="<?php echo esc_url(home_url('/services/vat/')); ?>">
                 <div class="display-4 fw-bold text-danger lh-1 mb-3">04</div>
                 <h5 class="mb-3">VAT</h5>
-                <p class="mb-0 fs-9 text-body">Registration, quarterly returns and MTD-compliant submissions. Scheme selection, partial exemption, the construction domestic reverse charge and property transactions.</p>
-              </div>
+                <p class="mb-3 fs-9 text-body">Registration, quarterly returns and MTD-compliant submissions. Scheme selection, partial exemption, the construction domestic reverse charge and property transactions.</p>
+                <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
+              </a>
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="h-100 p-4 p-md-5 border rounded bg-white">
+              <a class="h-100 d-block p-4 p-md-5 border rounded bg-white text-decoration-none text-body" href="<?php echo esc_url(home_url('/services/tax-advisory/')); ?>">
                 <div class="display-4 fw-bold text-danger lh-1 mb-3">05</div>
                 <h5 class="mb-3">Tax Advisory</h5>
-                <p class="mb-0 fs-9 text-body">Profit extraction, group reorganisation, business sale planning, Business Asset Disposal Relief, inheritance tax mitigation and HMRC enquiry representation.</p>
-              </div>
+                <p class="mb-3 fs-9 text-body">Profit extraction, group reorganisation, business sale planning, Business Asset Disposal Relief, inheritance tax mitigation and HMRC enquiry representation.</p>
+                <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
+              </a>
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="h-100 p-4 p-md-5 border rounded bg-white">
+              <a class="h-100 d-block p-4 p-md-5 border rounded bg-white text-decoration-none text-body" href="<?php echo esc_url(home_url('/services/property-tax/')); ?>">
                 <div class="display-4 fw-bold text-danger lh-1 mb-3">06</div>
                 <h5 class="mb-3">Property Tax</h5>
-                <p class="mb-0 fs-9 text-body">Holding structure advice, Section 24 mortgage interest restrictions, capital gains on disposal, SDLT and incorporation relief for landlords and investors.</p>
-              </div>
+                <p class="mb-3 fs-9 text-body">Holding structure advice, Section 24 mortgage interest restrictions, capital gains on disposal, SDLT and incorporation relief for landlords and investors.</p>
+                <span class="ls text-uppercase fw-bold fs-10 text-danger font-secondary">Explore &nearr;</span>
+              </a>
             </div>
-            <div class="col-12 text-center mt-4"><a class="btn btn-danger" href="#digitalContact">Work With Us &rarr;</a></div>
+            <div class="col-12 text-center mt-4"><a class="btn btn-danger" href="<?php echo esc_url(home_url('/services/')); ?>">View All Services &rarr;</a></div>
           </div>
         </div><!-- end of .container-->
 
@@ -595,10 +604,10 @@ $assets = get_stylesheet_directory_uri();
             <div class="col-md-6">
               <h4 class="mb-3">Links</h4>
               <ul class="list-unstyled">
-                <li class="mb-2"><a class="text-body" href="#digitalFeatures1">Services</a></li>
-                <li class="mb-2"><a class="text-body" href="#digitalSectors">Sectors</a></li>
-                <li class="mb-2"><a class="text-body" href="#digitalAbout">About</a></li>
-                <li class="mb-2"><a class="text-body" href="#razzaqInsights">Insights</a></li>
+                <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/services/')); ?>">Services</a></li>
+                <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/sectors/')); ?>">Sectors</a></li>
+                <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
+                <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/insights/')); ?>">Insights</a></li>
                 <li class="mb-0"><a class="text-body" href="#digitalContact">Get in Touch</a></li>
               </ul>
             </div>

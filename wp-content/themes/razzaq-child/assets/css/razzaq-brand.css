@@ -114,8 +114,50 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
     linear-gradient(135deg, var(--razzaq-dark) 0%, var(--razzaq-dark-2) 50%, #14301F 100%) !important;
 }
 
+/* ===== Inner-page sub-hero (about, services, sectors, insights) ===== */
+.razzaq-sub-hero { background-color: var(--razzaq-dark); position: relative; }
+.razzaq-sub-hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  opacity: 0.35;
+}
+.razzaq-sub-hero-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(135deg, rgba(15, 40, 25, 0.88) 0%, rgba(27, 94, 59, 0.55) 45%, rgba(14, 14, 13, 0.85) 100%);
+}
+
 /* ===== Lead paragraph — quieter ===== */
 .lead { font-weight: 300; color: var(--razzaq-muted); }
+
+/* ===== Insight cards (page-insights, single related) ===== */
+.razzaq-insight-card { transition: transform .25s ease, box-shadow .25s ease; }
+.razzaq-insight-card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(14, 14, 13, 0.08); }
+.razzaq-insight-img {
+  height: 220px; background-size: cover; background-position: center;
+  background-color: var(--razzaq-cream);
+}
+
+/* ===== Article body (single.php) — long-form readability ===== */
+.razzaq-article-body { font-family: 'DM Sans', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.75; color: var(--razzaq-charcoal); }
+.razzaq-article-body p { margin-bottom: 1.4em; }
+.razzaq-article-body h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 2rem; margin-top: 2.4em; margin-bottom: 0.8em; }
+.razzaq-article-body h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 1.4rem; margin-top: 1.8em; margin-bottom: 0.6em; }
+.razzaq-article-body ul, .razzaq-article-body ol { margin-bottom: 1.6em; padding-left: 1.5em; }
+.razzaq-article-body li { margin-bottom: 0.5em; }
+.razzaq-article-body blockquote {
+  border-left: 3px solid var(--razzaq-gold);
+  padding: 0.5em 0 0.5em 1.5em;
+  margin: 2em 0;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--razzaq-charcoal);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+.razzaq-article-body a { color: var(--razzaq-green); text-decoration: underline; }
+.razzaq-article-body a:hover { color: var(--razzaq-gold); }
+.razzaq-article-body strong { font-weight: 600; color: var(--razzaq-dark); }
+.razzaq-article-body img { max-width: 100%; height: auto; margin: 1.6em 0; }
 
 /* ===== Section heading rhythm ===== */
 section h2 { font-weight: 400; }
