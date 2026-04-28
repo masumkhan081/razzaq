@@ -59,7 +59,7 @@ get_header();
           'title' => 'Thinking about <em>your portfolio?</em>',
           'desc'  => 'Whether it is a single property or multi-entity portfolio, start with a proper conversation about structure.',
           'btns'  => [
-              ['label' => 'Book a Consultation', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Book a Consultation', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

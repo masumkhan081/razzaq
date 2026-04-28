@@ -114,7 +114,7 @@ get_header();
           'title' => 'Looking for a <em>proper</em> company accountant?',
           'desc'  => 'Tell us about your company and we will quote a fixed annual fee covering accounts, corporation tax and Companies House &mdash; with no surprises.',
           'btns'  => [
-              ['label' => 'Request a Quote', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Request a Quote', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

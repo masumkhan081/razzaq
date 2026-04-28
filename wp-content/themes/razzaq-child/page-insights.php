@@ -113,7 +113,7 @@ if (!$insights_query->have_posts()) {
           'title' => 'Want to discuss <em>your position?</em>',
           'desc'  => 'Our articles cover general principles &mdash; but every tax question has specific facts. If any of these resonate with you, get in touch.',
           'btns'  => [
-              ['label' => 'Get in Touch',     'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Get in Touch',     'url' => home_url('/contact/'), 'class' => 'btn-danger'],
               ['label' => 'Explore Services', 'url' => home_url('/services/'),       'class' => 'btn-outline-danger'],
           ],
       ]);

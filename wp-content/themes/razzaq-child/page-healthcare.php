@@ -92,7 +92,7 @@ get_header();
           'title' => 'Looking for an accountant <em>who understands medicine?</em>',
           'desc'  => 'Book a no-obligation call. We will explain what we can help with, and what the fees would look like.',
           'btns'  => [
-              ['label' => 'Book a Call', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Book a Call', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

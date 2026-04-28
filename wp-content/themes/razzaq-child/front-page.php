@@ -38,7 +38,7 @@ $assets = get_stylesheet_directory_uri();
               <p class="text-white text-opacity-75 ls text-uppercase fw-bold fs-9 mb-3">Tax &amp; Accounting Advisers &mdash; United Kingdom</p>
               <h1 class="fs-6 fs-sm-5 fs-md-4 text-white display-4">Razzaq <em>&amp;</em> Co.</h1>
               <h3 class="mt-3 mt-sm-4 mt-md-5 mb-4 text-white text-opacity-85 fw-normal fs-8 fs-md-7">We provide specialist tax and accounting services to individuals, medical professionals, business owners and investors. Our work is grounded in technical accuracy and a clear understanding of our clients&rsquo; circumstances.</h3>
-              <a class="btn btn-danger rounded-pill mt-2" href="#digitalContact">Work With Us &rarr;</a>
+              <a class="btn btn-danger rounded-pill mt-2" href="<?php echo esc_url(home_url('/contact/')); ?>">Work With Us &rarr;</a>
             </div>
           </div>
           <a class="indicator indicator-down" href="#target-down" data-offset="60">
@@ -608,7 +608,7 @@ $assets = get_stylesheet_directory_uri();
                 <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/sectors/')); ?>">Sectors</a></li>
                 <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
                 <li class="mb-2"><a class="text-body" href="<?php echo esc_url(home_url('/insights/')); ?>">Insights</a></li>
-                <li class="mb-0"><a class="text-body" href="#digitalContact">Get in Touch</a></li>
+                <li class="mb-0"><a class="text-body" href="<?php echo esc_url(home_url('/contact/')); ?>">Get in Touch</a></li>
               </ul>
             </div>
           </div>

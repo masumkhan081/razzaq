@@ -138,7 +138,7 @@ while (have_posts()) : the_post();
           'title' => 'Want to discuss <em>your position?</em>',
           'desc'  => 'Articles cover general principles &mdash; every tax question has specific facts. If this resonates, get in touch.',
           'btns'  => [
-              ['label' => 'Get in Touch', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Get in Touch', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
               ['label' => 'More Insights', 'url' => $insights_url,                'class' => 'btn-outline-danger'],
           ],
       ]);

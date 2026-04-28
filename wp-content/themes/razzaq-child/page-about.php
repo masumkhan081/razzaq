@@ -144,7 +144,7 @@ $assets = get_stylesheet_directory_uri();
           'title' => 'Ready to work with <em>a practice</em> that listens?',
           'desc'  => 'Whether you are looking for a new accountant, have a specific tax question, or need advice on a particular matter &mdash; we welcome the conversation.',
           'btns'  => [
-              ['label' => 'Get in Touch',          'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Get in Touch',          'url' => home_url('/contact/'), 'class' => 'btn-danger'],
               ['label' => 'Explore Our Services', 'url' => home_url('/services/'),       'class' => 'btn-outline-danger'],
           ],
       ]);

@@ -55,7 +55,7 @@ get_header();
           'title' => 'Construction accountant <em>that gets it?</em>',
           'desc'  => 'Tell us about your business. We will explain exactly what your CIS, VAT and corporate compliance position should look like.',
           'btns'  => [
-              ['label' => 'Book a Call', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Book a Call', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

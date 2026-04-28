@@ -52,7 +52,7 @@ get_header();
           'title' => 'Have a <em>specific</em> tax question?',
           'desc'  => 'Book an advisory session &mdash; we will tell you what is possible, what is sensible, and what it will cost.',
           'btns'  => [
-              ['label' => 'Request Advisory', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Request Advisory', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

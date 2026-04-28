@@ -117,7 +117,7 @@ get_header();
           'title' => 'Ready to get your <em>tax affairs</em> in order?',
           'desc'  => 'Tell us about your position and we will confirm scope and fees &mdash; with no obligation.',
           'btns'  => [
-              ['label' => 'Request a Call', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Request a Call', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

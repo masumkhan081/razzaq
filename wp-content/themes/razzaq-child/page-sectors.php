@@ -83,7 +83,7 @@ get_header();
           'title' => 'Work outside these sectors? <em>We still want to hear from you.</em>',
           'desc'  => 'While these three sectors form our core expertise, we act for clients across many industries. Tell us your position and we will be honest about fit.',
           'btns'  => [
-              ['label' => 'Get in Touch', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Get in Touch', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

@@ -79,7 +79,7 @@ get_header();
           'title' => 'Need help with <em>VAT?</em>',
           'desc'  => 'Whether it is routine compliance or a specific question, we are here to help.',
           'btns'  => [
-              ['label' => 'Get in Touch', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Get in Touch', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>

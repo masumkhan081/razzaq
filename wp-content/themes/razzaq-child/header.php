@@ -37,7 +37,7 @@ $assets = get_stylesheet_directory_uri();
             <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/sectors/')); ?>">Sectors</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/insights/')); ?>">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/#digitalContact')); ?>">Get in Touch</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(home_url('/contact/')); ?>">Get in Touch</a></li>
           </ul>
         </div>
       </div>

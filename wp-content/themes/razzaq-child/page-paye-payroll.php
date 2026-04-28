@@ -110,7 +110,7 @@ get_header();
           'title' => 'Need <em>reliable</em> payroll?',
           'desc'  => 'We will take over your payroll from any provider, with no disruption for your team.',
           'btns'  => [
-              ['label' => 'Request a Quote', 'url' => home_url('/#digitalContact'), 'class' => 'btn-danger'],
+              ['label' => 'Request a Quote', 'url' => home_url('/contact/'), 'class' => 'btn-danger'],
           ],
       ]);
       ?>
