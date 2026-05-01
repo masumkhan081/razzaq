@@ -22,7 +22,7 @@ get_header();
 
 
       <!-- Services grid -->
-      <section class="py-7 py-md-8" id="servicesGrid">
+      <section id="servicesGrid">
         <div class="container">
           <div class="row gy-4">
             <?php
@@ -50,7 +50,7 @@ get_header();
 
 
       <!-- Approach (4 steps) -->
-      <section class="border-top bg-light py-7 py-md-8" id="servicesApproach">
+      <section class="border-top bg-light" id="servicesApproach">
         <div class="container">
           <div class="row justify-content-center text-center mb-6">
             <div class="col-lg-9">

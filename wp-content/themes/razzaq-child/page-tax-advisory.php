@@ -21,7 +21,7 @@ get_header();
       ?>
 
 
-      <section class="py-7 py-md-8">
+      <section>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10">

@@ -10,15 +10,15 @@ add_action('after_setup_theme', function () {
 
 add_action('wp_enqueue_scripts', function () {
     $base    = get_stylesheet_directory_uri();
-    $version = wp_get_theme()->get('Version');
+    $dir     = get_stylesheet_directory();
 
     // CSS order: vendor CSS -> theme.css -> hbui.css -> razzaq-brand.css (last, brand overrides)
     wp_enqueue_style('swiper',       $base . '/vendors/swiper/swiper-bundle.min.css', [], null);
     wp_enqueue_style('loaders',      $base . '/vendors/loaders.css/loaders.min.css', [], null);
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap', [], null);
-    wp_enqueue_style('razzaq-theme', $base . '/assets/css/theme.css', ['swiper', 'loaders'], $version);
-    wp_enqueue_style('razzaq-hbui',  $base . '/assets/css/hbui.css',  ['razzaq-theme'], $version);
-    wp_enqueue_style('razzaq-brand', $base . '/assets/css/razzaq-brand.css', ['razzaq-hbui'], $version);
+    wp_enqueue_style('razzaq-theme', $base . '/assets/css/theme.css', ['swiper', 'loaders'], filemtime($dir . '/assets/css/theme.css'));
+    wp_enqueue_style('razzaq-hbui',  $base . '/assets/css/hbui.css',  ['razzaq-theme'], filemtime($dir . '/assets/css/hbui.css'));
+    wp_enqueue_style('razzaq-brand', $base . '/assets/css/razzaq-brand.css', ['razzaq-hbui'], filemtime($dir . '/assets/css/razzaq-brand.css'));
+    $version = wp_get_theme()->get('Version');
 
     // JS in footer, theme.js last (depends on all vendors).
     wp_enqueue_script('hummingbird',     $base . '/vendors/hummingbird/hummingbird.bundle.min.js', [], null, true);

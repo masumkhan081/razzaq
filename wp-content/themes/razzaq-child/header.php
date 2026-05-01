@@ -29,7 +29,7 @@ $assets = get_stylesheet_directory_uri();
   <body <?php body_class('overflow-hidden-x'); ?>>
     <?php wp_body_open(); ?>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow">
-      <div class="container"><a class="navbar-brand fs-4 fw-bold text-white font-primary" href="<?php echo esc_url(home_url('/')); ?>" style="letter-spacing:.02em;">Razzaq <em class="text-danger fst-italic fw-normal">&amp;</em> Co.</a>
+      <div class="container"><a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url($assets); ?>/assets/img/logos/new-logo.svg" alt="Razzaq &amp; Co." height="35" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown1">
           <ul class="navbar-nav ms-auto align-items-lg-center">

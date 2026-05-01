@@ -22,7 +22,7 @@ get_header();
 
 
       <!-- Sectors grid -->
-      <section class="py-7 py-md-8" id="sectorsGrid">
+      <section id="sectorsGrid">
         <div class="container">
           <div class="row gy-4">
             <?php

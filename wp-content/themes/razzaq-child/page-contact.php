@@ -21,7 +21,7 @@ get_header();
       ?>
 
 
-      <section class="py-7 py-md-8" id="contactBody">
+      <section id="contactBody">
         <div class="container">
           <div class="row gy-6">
 
@@ -105,7 +105,7 @@ get_header();
       </section>
 
 
-      <section class="border-top bg-light py-7 py-md-8" id="contactFAQ">
+      <section class="border-top bg-light" id="contactFAQ">
         <div class="container">
           <div class="row justify-content-center text-center mb-6">
             <div class="col-lg-9">

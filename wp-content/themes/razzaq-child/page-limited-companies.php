@@ -21,7 +21,7 @@ get_header();
       ?>
 
 
-      <section class="py-7 py-md-8">
+      <section>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -50,7 +50,7 @@ get_header();
       </section>
 
 
-      <section class="border-top bg-light py-7 py-md-8">
+      <section class="border-top bg-light">
         <div class="container">
           <div class="row justify-content-center text-center mb-6">
             <div class="col-lg-9">
@@ -79,7 +79,7 @@ get_header();
       </section>
 
 
-      <section class="py-7 py-md-8">
+      <section>
         <div class="container">
           <div class="row mb-5">
             <div class="col-lg-9">

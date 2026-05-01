@@ -39,7 +39,7 @@ if (!$insights_query->have_posts()) {
       ?>
 
 
-      <section class="py-7 py-md-8" id="insightsGrid">
+      <section id="insightsGrid">
         <div class="container">
           <?php if ($insights_query->have_posts()) : ?>
             <div class="row gy-4">

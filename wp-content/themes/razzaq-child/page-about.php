@@ -23,7 +23,7 @@ $assets = get_stylesheet_directory_uri();
 
 
       <!-- Our Story  (razzaq About §01) -->
-      <section class="py-7 py-md-8" id="aboutStory">
+      <section id="aboutStory">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -44,7 +44,7 @@ $assets = get_stylesheet_directory_uri();
 
 
       <!-- Timeline  (razzaq About §02) -->
-      <section class="border-top border-bottom bg-light py-7 py-md-8" id="aboutTimeline">
+      <section class="border-top border-bottom bg-light" id="aboutTimeline">
         <div class="container">
           <div class="row justify-content-center text-center mb-6">
             <div class="col-lg-9">
@@ -78,7 +78,7 @@ $assets = get_stylesheet_directory_uri();
 
 
       <!-- The Team  (razzaq About §03) -->
-      <section class="py-7 py-md-8" id="aboutTeam">
+      <section id="aboutTeam">
         <div class="container">
           <div class="row justify-content-center text-center mb-6">
             <div class="col-lg-9">

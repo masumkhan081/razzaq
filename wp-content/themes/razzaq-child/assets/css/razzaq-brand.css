@@ -1,13 +1,13 @@
 /* ============================================================
    razzaq-brand.css
-   Overrides sparrow palette + typography with razzaq brand.
+   Layout/structure: Sparrow.  Branding (font/colour/logo): Razzaq Figma.
    Loaded AFTER hbui.css, so these win on equal specificity.
-   Only overrides classes actually used in templates.
    ============================================================ */
 
 :root {
   --razzaq-green: #1B5E3B;
   --razzaq-green-mid: #2a7a50;
+  --razzaq-green-deep: #14301F;
   --razzaq-gold: #D4A017;
   --razzaq-gold-hover: #B8881C;
   --razzaq-charcoal: #222220;
@@ -18,21 +18,21 @@
   --razzaq-muted: #777770;
 }
 
-/* ===== Typography ===== */
-body {
-  font-family: 'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif !important;
-  background-color: var(--razzaq-warm-white) !important;
-  color: var(--razzaq-charcoal) !important;
+/* ===== Typography — Helvetica Neue stack everywhere (per Razzaq Figma) ===== */
+body,
+.font-secondary,
+.font-primary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+body { background-color: var(--razzaq-warm-white) !important; color: var(--razzaq-charcoal) !important; }
+
 h1, h2, h3, h4, h5, h6,
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
 .font-primary,
 .navbar-brand {
-  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
   letter-spacing: -0.005em;
-}
-.font-secondary {
-  font-family: 'DM Sans', system-ui, -apple-system, sans-serif !important;
 }
 /* Italic em — gold accent */
 h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
@@ -56,33 +56,34 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 
 .border-danger      { border-color: var(--razzaq-green) !important; }
 
-/* ===== Buttons ===== */
-.btn-danger {
-  background-color: var(--razzaq-gold) !important;
-  border-color: var(--razzaq-gold) !important;
+/* ===== Buttons — all green, no gold backgrounds ===== */
+.btn-danger,
+.btn-razzaq-green {
+  background-color: var(--razzaq-green) !important;
+  border-color: var(--razzaq-green) !important;
   color: #fff !important;
   letter-spacing: 0.04em;
   font-weight: 500;
 }
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background-color: var(--razzaq-gold-hover) !important;
-  border-color: var(--razzaq-gold-hover) !important;
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active,
+.btn-razzaq-green:hover, .btn-razzaq-green:focus, .btn-razzaq-green:active {
+  background-color: var(--razzaq-green-deep) !important;
+  border-color: var(--razzaq-green-deep) !important;
   color: #fff !important;
 }
 .btn-outline-danger {
-  color: var(--razzaq-gold) !important;
-  border-color: var(--razzaq-gold) !important;
+  color: var(--razzaq-green) !important;
+  border-color: var(--razzaq-green) !important;
   background-color: transparent !important;
   letter-spacing: 0.04em;
   font-weight: 500;
 }
 .btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger:active {
-  background-color: var(--razzaq-gold) !important;
-  border-color: var(--razzaq-gold) !important;
+  background-color: var(--razzaq-green) !important;
+  border-color: var(--razzaq-green) !important;
   color: #fff !important;
 }
-
-/* ===== Navbar (.navbar-sparrow + .navbar-dark.fixed-top in header.php) ===== */
+/* ===== Navbar ===== */
 .navbar-sparrow,
 .navbar.navbar-dark.fixed-top {
   background-color: rgba(14, 14, 13, 0.92) !important;
@@ -90,10 +91,9 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
-.navbar-brand {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
+.navbar-sparrow .navbar-brand,
+.navbar.navbar-dark.fixed-top .navbar-brand { padding-top: .5rem !important; padding-bottom: .5rem !important; }
+.navbar-brand img { display: block !important; height: 35px !important; width: auto !important; max-height: 35px !important; }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.78);
   letter-spacing: 0.02em;
@@ -107,11 +107,13 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 /* ===== Marquee dot — green accent ===== */
 .razzaq-marquee-dot { background: var(--razzaq-green) !important; }
 
-/* ===== Hero — dark gradient with green tint, no image ===== */
-#digitalHeader {
-  background:
-    radial-gradient(circle at 30% 20%, rgba(27, 94, 59, 0.22) 0%, transparent 55%),
-    linear-gradient(135deg, var(--razzaq-dark) 0%, var(--razzaq-dark-2) 50%, #14301F 100%) !important;
+/* ===== Hero — Sparrow header-digital.jpg + Razzaq green overlay ===== */
+#digitalHeader { position: relative; }
+#digitalHeader .bg-holder.overlay::before {
+  background: linear-gradient(135deg,
+    rgba(15, 40, 25, 0.78) 0%,
+    rgba(27, 94, 59, 0.55) 45%,
+    rgba(14, 14, 13, 0.82) 100%) !important;
 }
 
 /* ===== Inner-page sub-hero (about, services, sectors, insights) ===== */
@@ -138,11 +140,11 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
   background-color: var(--razzaq-cream);
 }
 
-/* ===== Article body (single.php) — long-form readability ===== */
-.razzaq-article-body { font-family: 'DM Sans', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.75; color: var(--razzaq-charcoal); }
+/* ===== Article body (single.php) ===== */
+.razzaq-article-body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.0625rem; line-height: 1.75; color: var(--razzaq-charcoal); }
 .razzaq-article-body p { margin-bottom: 1.4em; }
-.razzaq-article-body h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 2rem; margin-top: 2.4em; margin-bottom: 0.8em; }
-.razzaq-article-body h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 1.4rem; margin-top: 1.8em; margin-bottom: 0.6em; }
+.razzaq-article-body h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; font-size: 1.85rem; margin-top: 2.4em; margin-bottom: 0.8em; }
+.razzaq-article-body h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; font-size: 1.35rem; margin-top: 1.8em; margin-bottom: 0.6em; }
 .razzaq-article-body ul, .razzaq-article-body ol { margin-bottom: 1.6em; padding-left: 1.5em; }
 .razzaq-article-body li { margin-bottom: 0.5em; }
 .razzaq-article-body blockquote {
@@ -150,9 +152,8 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
   padding: 0.5em 0 0.5em 1.5em;
   margin: 2em 0;
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--razzaq-charcoal);
-  font-family: 'Cormorant Garamond', Georgia, serif;
 }
 .razzaq-article-body a { color: var(--razzaq-green); text-decoration: underline; }
 .razzaq-article-body a:hover { color: var(--razzaq-gold); }
@@ -160,5 +161,94 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 .razzaq-article-body img { max-width: 100%; height: auto; margin: 1.6em 0; }
 
 /* ===== Section heading rhythm ===== */
-section h2 { font-weight: 400; }
-section h3 { font-weight: 400; }
+section h2 { font-weight: 600; }
+section h3 { font-weight: 500; }
+
+/* ===== Card titles — Sectors, Areas of practice & Insights — preserve sentence case ===== */
+#digitalSectors h5,
+#digitalFeatures1 h5,
+#razzaqInsights h5,
+#razzaqWhy h5,
+#razzaqApproach h4,
+#digitalSocials h3,
+#digitalSocials h4 {
+  text-transform: none !important;
+}
+
+/* ===== Tighter gap between adjacent grid sections (Sectors -> Services) ===== */
+#digitalSectors    { padding-bottom: 4rem; }
+#digitalFeatures1  { padding-top: 4rem; }
+@media (min-width: 992px) {
+  #digitalSectors    { padding-bottom: 4.5rem; }
+  #digitalFeatures1  { padding-top: 4.5rem; }
+}
+
+/* ===== Tighter gap between Testimonials -> Insights ===== */
+#digitalWeDo       { padding-bottom: 4rem; }
+#razzaqInsights    { padding-top: 4rem; }
+@media (min-width: 992px) {
+  #digitalWeDo       { padding-bottom: 4.5rem; }
+  #razzaqInsights    { padding-top: 4.5rem; }
+}
+
+/* ===== Slim CTA strip (Get in touch above footer) ===== */
+#razzaqGetInTouchCta { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+@media (min-width: 992px) {
+  #razzaqGetInTouchCta { padding-top: 3rem; padding-bottom: 3rem; }
+}
+
+/* ===== Brand-green background utility (used by Home — Green variant) ===== */
+.bg-razzaq-green { background-color: var(--razzaq-green) !important; }
+
+/* ===== Home (Green) variant — recolour the fixed top navbar ===== */
+.home-green .navbar-sparrow,
+.home-green .navbar.navbar-dark.fixed-top {
+  background-color: rgba(27, 94, 59, 0.92) !important; /* var(--razzaq-green) at 0.92 alpha */
+}
+
+/* ===== Home (Green) variant — danger accent collides with green bg.
+   Swap to brand gold inside green sections so the accents stay visible. ===== */
+.home-green .bg-razzaq-green .text-danger {
+  color: var(--razzaq-gold) !important;
+}
+.home-green .bg-razzaq-green .border-danger {
+  border-color: var(--razzaq-gold) !important;
+}
+.home-green .bg-razzaq-green .btn-danger {
+  background-color: var(--razzaq-gold) !important;
+  border-color: var(--razzaq-gold) !important;
+  color: var(--razzaq-charcoal) !important;
+}
+.home-green .bg-razzaq-green .btn-danger:hover,
+.home-green .bg-razzaq-green .btn-danger:focus,
+.home-green .bg-razzaq-green .btn-danger:active {
+  background-color: var(--razzaq-gold-hover) !important;
+  border-color: var(--razzaq-gold-hover) !important;
+  color: var(--razzaq-charcoal) !important;
+}
+
+/* Green-variant footer (bg-razzaq-green) — muted gray text becomes invisible
+   on green; lift to white. */
+.home-green .footer.bg-razzaq-green,
+.home-green .footer.bg-razzaq-green p,
+.home-green .footer.bg-razzaq-green a {
+  color: #fff !important;
+}
+
+/* Green-variant top navbar — translucent white on the saturated green is hard
+   to read; bump nav links and brand to full white with a clearer hover. */
+.home-green .navbar-dark .navbar-nav .nav-link,
+.home-green .navbar-sparrow .navbar-nav .nav-link,
+.home-green .navbar.navbar-dark.fixed-top .navbar-nav .nav-link,
+.home-green .navbar-brand,
+.home-green .navbar-brand a {
+  color: #fff !important;
+}
+.home-green .navbar-dark .navbar-nav .nav-link:hover,
+.home-green .navbar-dark .navbar-nav .nav-link:focus,
+.home-green .navbar-sparrow .navbar-nav .nav-link:hover,
+.home-green .navbar-sparrow .navbar-nav .nav-link:focus,
+.home-green .navbar.navbar-dark.fixed-top .navbar-nav .nav-link:hover,
+.home-green .navbar.navbar-dark.fixed-top .navbar-nav .nav-link:focus {
+  color: var(--razzaq-gold) !important;
+}

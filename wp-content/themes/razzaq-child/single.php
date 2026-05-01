@@ -101,7 +101,7 @@ while (have_posts()) : the_post();
           ]);
       }
       if ($related->have_posts()) : ?>
-        <section class="border-top bg-light py-7 py-md-8">
+        <section class="border-top bg-light">
           <div class="container">
             <div class="row mb-5">
               <div class="col-lg-9">
